@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ICON -->
+    <script src="https://kit.fontawesome.com/c139a63729.js" crossorigin="anonymous"></script>
+    <!-- TAILWIND  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              spotify: "#b3b3b3",
+              menu: "#121212",
+              navbar: "#451d1a",
+              profile: "#150908",
+              card: "#303030",
+              card2: "#171717",
+              footer: "#181818",
+              icon: "#bababa",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- BODY START -->
+    <section id="menu">
+      <div class="flex">
+        <!-- SIDEBAR START -->
+        <div class="w-1/4 bg-black">
+          <div class="container W-full fixed">
+            <div class="p-5">
+              <img src="/assets/spotify.png" alt="" class="w-[130px]" />
+            </div>
+            <!-- SIDEBAR MENU START -->
+            <div id="menu">
+              <ul class="space-y-4 pl-5 pt-5 text-spotify text-sm">
+                <li class="flex">
+                  <img src="/assets/home.png" alt="" />
+                  <a class="font-medium text-white pl-4">Home</a>
+                </li>
+                <li class="flex">
+                  <img src="/assets/search.png" alt="" />
+                  <a href="" class="font-medium hover:text-white pl-3">Search</a>
+                </li>
+                <li class="flex">
+                  <img src="/assets/library.png" alt="" />
+                  <a href="" class="font-medium hover:text-white pl-4">Your library</a>
+                </li>
+              </ul>
+              <ul class="pt-10 space-y-3 pl-5 text-spotify text-sm">
+                <li class="flex">
+                  <img src="/assets/createPlaylist.png" alt="" />
+                  <a href="" class="font-bold hover:text-white pl-4">Create playlist</a>
+                </li>
+                <li class="flex">
+                  <img src="/assets/likedSongs.png" alt="" />
+                  <a href="" class="font-bold hover:text-white pl-4">Liked songs</a>
+                </li>
+              </ul>
+              <div class="w-[300px] h-[0.5px] bg-spotify mt-5 ml-5 opacity-20"></div>
+            </div>
+            <!-- SIDEBAR MENU END -->
+
+            <!-- SIDEBAR MENU FAVORITE START -->
+            <div>
+              <ul class="text-spotify space-y-3 pl-5 pt-5 text-sm">
+                <li>
+                  <a href="" class="hover:text-white">Mix coding</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-white">Chill indo</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-white">Disukai dari radio</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-white">SLOW</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-white">chill</a>
+                </li>
+              </ul>
+            </div>
+            <!-- SIDEBAR MENU FAVORITE END -->
+          </div>
+        </div>
+        <!-- SIDEBAR END -->
+
+        <!-- MENU START -->
+        <div class="w-3/4 bg-gradient-to-b from-navbar via-menu to-menu">
+          <!-- NAVBAR START -->
+          <div class="container w-full h-16 bg-navbar fixed flex">
+            <!-- ARROW BUTTON START -->
+            <div class="w-9 h-9 bg-black rounded-full ml-7 mt-4 opacity-70 relative">
+              <a href="" class="absolute text-white text-4xl -top-2 right-2 font-thin"> < </a>
+            </div>
+            <div class="w-9 h-9 bg-black rounded-full ml-5 mt-4 opacity-50 relative">
+              <a href="" class="absolute text-white text-4xl -top-2 right-1 font-thin"> > </a>
+            </div>
+            <!-- ARROW BUTTON END -->
+
+            <!-- BUTTON AND PROFILE NAVBAR START -->
+            <button class="ml-[550px] border-[0.5px] border-spotify bg-navbar rounded-full w-[85px] h-7 mt-4 text-white font-bold text-sm hover:bg-black hover:scale-110">Upgrade</button>
+            <div class="bg-profile ml-10 w-48 h-7 rounded-full mt-4 relative hover:bg-gray-800">
+              <div class="absolute top-0 right-50 w-7 h-7 rounded-full bg-black ml-2"></div>
+              <h1 class="text-white font-bold pl-12 pt-1 text-sm">Dimas Pratama</h1>
+              <span class="absolute top-2 right-5 text-white text-xs">▼</span>
+            </div>
+          </div>
+          <!-- BUTTON AND PROFILE NAVBAR END -->
+
+          <!-- NAVBAR END -->
+
+          <!-- CARD 1 START  -->
+          <div class="container mt-20">
+            <h1 class="text-white text-4xl font-bold pl-7 md:text-2xl">Good afternoon</h1>
+            <div class="flex flex-wrap">
+              <div class="card w-[340px] h-24 bg-card rounded-md ml-7 mt-5 flex md:w-[290px] h-20">
+                <img src="/assets/mix coding.jpg" alt="" class="w-20" />
+                <h1 class="text-white my-auto ml-5 text-md font-bold">Mix coding</h1>
+              </div>
+              <div class="card w-[340px] h-24 bg-card rounded-md ml-7 mt-5 flex md: w-[290px] h-20">
+                <img src="/assets/chill.png" alt="" class="w-20" />
+                <h1 class="text-white my-auto ml-5 text-md font-bold">chill</h1>
+              </div>
+              <div class="card w-[340px] h-24 bg-card rounded-md ml-7 mt-5 flex md: w-[290px] h-20">
+                <img src="/assets/chill indo.png" alt="" class="w-20" />
+                <h1 class="text-white my-auto ml-5 text-md font-bold">Chill indo</h1>
+              </div>
+              <div class="card w-[340px] h-24 bg-card rounded-md ml-7 mt-5 flex md: w-[290px] h-20">
+                <img src="/assets/hot indo.png" alt="" class="w-20" />
+                <h1 class="text-white my-auto ml-5 text-md font-bold">Hot Hits Indonesia</h1>
+              </div>
+              <div class="card w-[340px] h-24 bg-card rounded-md ml-7 mt-5 flex md: w-[290px] h-20">
+                <img src="/assets/olivia rodrigo.png" alt="" class="w-20" />
+                <h1 class="text-white my-auto ml-5 text-md font-bold">Olivia rodrigo</h1>
+              </div>
+              <div class="card w-[340px] h-24 bg-card rounded-md ml-7 mt-5 flex md: w-[290px] h-20">
+                <img src="/assets/coldplay.png" alt="" class="w-20" />
+                <h1 class="text-white my-auto ml-5 text-md font-bold">Coldplay</h1>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 1 END  -->
+
+          <!-- CARD 2 START -->
+          <div class="container mt-8">
+            <a href="" class="text-white ml-7 text-3xl font-bold md:text-xl">Today's biggest hits</a>
+            <div class="flex lg:flex-nowrap md:flex-wrap md:overflow-hidden sm:flex-wrap">
+              <div class="card w-56 h-[350px] bg-card2 ml-7 mt-7 rounded-md group transition hover:bg-card hover:duration-1000">
+                <div class="w-40 h-40 bg-white mx-auto mt-5 rounded-md">
+                  <img src="/assets/1 hits.png" alt="" />
+                </div>
+                <h1 class="text-white font-bold text-xl md:text-base ml-7 mt-3">Lagi viral</h1>
+                <p class="text-spotify font-medium ml-7 text-xl md:text-sm mt-2">Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="card w-56 h-[350px] bg-card2 ml-7 mt-7 rounded-md group transition hover:bg-card hover:duration-1000">
+                <div class="w-40 h-40 bg-white mx-auto mt-5 rounded-md">
+                  <img src="/assets/2 hits.png" alt="" />
+                </div>
+                <h1 class="text-white font-bold text-xl md:text-base ml-7 mt-3">Viral hits</h1>
+                <p class="text-spotify font-medium ml-7 text-xl md:text-sm mt-2">Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="card w-56 h-[350px] bg-card2 ml-7 mt-7 rounded-md group transition hover:bg-card hover:duration-1000">
+                <div class="w-40 h-40 bg-white mx-auto mt-5 rounded-md">
+                  <img src="/assets/3 hits.png" alt="" />
+                </div>
+                <h1 class="text-white font-bold text-xl md:text-base ml-7 mt-3">Today's hits Indonesia</h1>
+                <p class="text-spotify font-medium ml-7 text-xl md:text-sm mt-2">Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="card w-56 h-[350px] bg-card2 ml-7 mt-7 rounded-md group transition hover:bg-card hover:duration-1000">
+                <div class="w-40 h-40 bg-white mx-auto mt-5 rounded-md">
+                  <img src="/assets/4 hits.png" alt="" />
+                </div>
+                <h1 class="text-white font-bold text-xl md:text-base ml-7 mt-3">Puncak klasemen</h1>
+                <p class="text-spotify font-medium ml-7 text-xl md:text-sm mt-2">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 2 END -->
+
+          <!-- CARD 3 START -->
+          <div class="container mt-8">
+            <a href="" class="text-white ml-7 text-3xl font-bold no-underline hover:underline md:text-xl">Your top mixes</a>
+            <div class="flex lg:flex-nowrap md:flex-wrap md:overflow-hidden sm:flex-wrap">
+              <div class="card w-56 h-[350px] bg-card2 ml-7 mt-7 rounded-md group transition hover:bg-card hover:duration-1000">
+                <div class="w-40 h-40 bg-black mx-auto mt-5">
+                  <img src="/assets/Ari lasso mix.png" alt="" />
+                </div>
+                <h1 class="text-white font-bold text-xl md:text-base ml-7 mt-3">Ari lasso mix</h1>
+                <p class="text-spotify font-medium ml-7 text-xl md:text-sm mt-2">Lorem, ipsum dolor.</p>
+              </div>
+              <div class="card w-56 h-[350px] bg-card2 ml-7 mt-7 rounded-md group transition hover:bg-card hover:duration-1000">
+                <div class="w-40 h-40 bg-black mx-auto mt-5">
+                  <img src="/assets/Tiket mix.png" alt="" />
+                </div>
+                <h1 class="text-white font-bold text-xl md:text-base ml-7 mt-3">Tiket mix</h1>
+                <p class="text-spotify font-medium ml-7 text-xl md:text-sm mt-2">Lorem, ipsum dolor.</p>
+              </div>
+              <div class="card w-56 h-[350px] bg-card2 ml-7 mt-7 rounded-md group transition hover:bg-card hover:duration-1000">
+                <div class="w-40 h-40 bg-black mx-auto mt-5">
+                  <img src="/assets/Moody mix.png" alt="" />
+                </div>
+                <h1 class="text-white font-bold text-xl md:text-base ml-7 mt-3">Moody mix</h1>
+                <p class="text-spotify font-medium ml-7 text-xl md:text-sm mt-2">Lorem, ipsum dolor.</p>
+              </div>
+              <div class="card w-56 h-[350px] bg-card2 ml-7 mt-7 rounded-md group transition hover:bg-card hover:duration-1000">
+                <div class="w-40 h-40 bg-black mx-auto mt-5">
+                  <img src="/assets/Happy mix.png" alt="" />
+                </div>
+                <h1 class="text-white font-bold text-xl md:text-base ml-7 mt-3">Happy mix</h1>
+                <p class="text-spotify font-medium ml-7 text-xl md:text-sm mt-2">Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 3 END -->
+        </div>
+        <!-- MENU END -->
+      </div>
+    </section>
+
+    <!-- FOOTER START -->
+    <div id="footer" class="w-full h-24 bg-footer fixed bottom-0">
+      <div class="flex justify-between w-full">
+        <!-- PLAY SONG START -->
+        <div class="flex">
+          <div class="w-14 h-14 bg-white mt-5 ml-6">
+            <img src="/assets/olivia rodrigo.png" alt="" />
+          </div>
+          <ul class="mt-6 ml-3">
+            <li>
+              <a href="" class="font-bold text-white hover:underline">happier</a>
+            </li>
+            <li>
+              <a href="" class="text-spotify text-xs hover:underline font-semibold">Olivia rodrigo</a>
+            </li>
+          </ul>
+          <span class="mt-9 ml-12">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="w-5 fill-none stroke-spotify stroke-2 hover:stroke-white">
+              <path
+                d="M 10,30
+                   A 20,20 0,0,1 50,30
+                   A 20,20 0,0,1 90,30
+                   Q 90,60 50,90
+                   Q 10,60 10,30"
+              />
+            </svg>
+          </span>
+          <span
+            ><svg width="72" height="43" viewBox="0 0 72 43" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 mt-6 ml-3 stroke-spotify stroke-2 hover:stroke-white">
+              <rect x="0.5" y="0.5" width="71" height="42" />
+              <path d="M41.5 38V26.5H66V38H41.5Z" />
+            </svg>
+          </span>
+        </div>
+        <!-- PLAY SONG END -->
+        <div class="grid">
+          <!-- ICON PLAYLIST START -->
+          <div class="flex space-x-10 mt-5 mr-60">
+            <span
+              ><svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="mt-2">
+                <path
+                  d="M1 14.96L3.55 14.97C4.46 14.97 5.31 14.52 5.81 13.77L12.2 4.19C12.4474 3.81805 12.7836 3.51357 13.1782 3.30407C13.5727 3.09457 14.0133 2.98663 14.46 2.99L19.01 3.01M17 16.96L19 14.96M6.89 5.6L5.81 4.1C5.56022 3.75034 5.22987 3.46599 4.84693 3.27104C4.46398 3.07608 4.0397 2.97625 3.61 2.98L1 2.99M10.97 12.36L12.19 13.93C12.7 14.59 13.5 14.98 14.34 14.98L19.01 14.96M19 3L17 1"
+                  stroke="#BABABA"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span
+              ><svg width="19" height="17" viewBox="0 0 19 17" fill="#BABABA" xmlns="http://www.w3.org/2000/svg" class="mt-2">
+                <path
+                  d="M1 14.5155V2.15551M17.48 3.55551V13.1255C17.48 15.0855 15.35 16.3155 13.65 15.3355L9.5 12.9455L5.35 10.5455C3.65 9.56551 3.65 7.11551 5.35 6.13551L9.5 3.73551L13.65 1.34551C15.35 0.365508 17.48 1.58551 17.48 3.55551V3.55551Z"
+                  stroke="#BABABA"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span class="h-8 w-8 bg-icon rounded-full">
+              <svg width="18" height="22" viewBox="0 0 18 22" fill="black" xmlns="http://www.w3.org/2000/svg" class="mx-auto my-1 w-3">
+                <path d="M1 21V1L17 12L1 21Z" stroke="black" />
+              </svg>
+            </span>
+            <span
+              ><svg width="19" height="17" viewBox="0 0 19 17" fill="#BABABA" xmlns="http://www.w3.org/2000/svg" class="mt-2">
+                <path
+                  d="M17.48 14.5155V2.15551M1 3.55551V13.1255C1 15.0855 3.13 16.3155 4.83 15.3355L8.98 12.9455L13.13 10.5455C14.83 9.56551 14.83 7.11551 13.13 6.13551L8.98 3.73551L4.83 1.34551C3.13 0.365508 1 1.58551 1 3.55551V3.55551Z"
+                  stroke="#BABABA"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span
+              ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-1">
+                <path d="M3.57996 5.16H17.42C19.08 5.16 20.42 6.5 20.42 8.16V11.48" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6.73996 2L3.57996 5.16L6.73996 8.32M20.42 18.84H6.57996C4.91996 18.84 3.57996 17.5 3.57996 15.84V12.52" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M17.26 22L20.42 18.84L17.26 15.68" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </div>
+          <!-- ICON PLAYLIST END -->
+          <!-- DURATION SONGS START -->
+          <div class="flex">
+            <div class="w-[500px] h-[3px] bg-white border-spotify absolute bottom-5 left-[430px]"></div>
+          </div>
+          <!-- DURATION SONGS END -->
+        </div>
+        <div class="flex border-2">a</div>
+      </div>
+    </div>
+    <!-- FOOTER END -->
+  </body>
+</html>
